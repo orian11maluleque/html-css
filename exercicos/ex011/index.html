@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Imgem dinamica</h1>
+    <p>Pode abrir essa pagina em diferentes tipos de dispositivo ou pode aumentar/diminuir tamanho do navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/pequeno.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/medio.png" type="image/png">
+        <img src="imagens/grande.png" alt="imagem grande">
+    </picture>
+
+    <h1>reproduzindo audio</h1>
+    <p>Colocando audio no site</p>
+    <audio src="media/02. The Story of O.J..mp3" controls autoplay></audio>
+
+    <p>Colocando audios alternativos para caso o navegador nao suporte o primeiro</p>
+    <audio controls autoplay>
+        ...
+    </audio>
+</body>
+</html>

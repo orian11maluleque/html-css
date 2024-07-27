@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de hoover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: grey;
+        }
+        h1{
+            text-align: center;
+        }
+        
+        div{
+            color: yellow;
+        }
+        div>p{
+            display: none;
+            color: red;
+        }
+        div:hover>p{
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exemplo de texto escondido</h1>
+    <p>Passe o mause sobre o texto abaixo</p>
+    <div>
+        pause o mause aqui
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus in eos obcaecati id optio fugiat, iusto dolore sit velit laborum minima rem, nobis neque, placeat veritatis voluptas facilis dolorem nihil.</p>
+    </div>
+</body>
+</html>

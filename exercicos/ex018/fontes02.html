@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes externas</title>
+
+    <style>
+        /*
+        tipos de extensao de fontes:
+        opentype (opt)
+        truetype (ttp)
+        apple advance typography (aat)
+        svg
+        enbended-opentype
+        */
+        
+        @font-face {
+            font-family: 'fonte1';
+            src: url('fontes/Coffee Spark.ttf') format('truetype'), url('fontes/Coffee Spark.otf') format('opentype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'fonte2';
+            src: url('fontes/Playground.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+        @font-face {
+            font-family: 'fonte3';
+            src: url() format();
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        h1{
+            font-family: fonte1;
+        }
+        h2{
+            font-family: fonte2;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>Fontes no servidor</h1>
+    <h2>Exemplo de fontes no site de origem local</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi assumenda, illo numquam exercitationem sit maxime inventore ducimus voluptas rerum iure. Incidunt sed, officiis non quae doloribus consequatur blanditiis eveniet ipsum?</p>
+</body>
+</html>
