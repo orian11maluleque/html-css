@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        a{
+            color: chocolate;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: cadetblue;
+            text-shadow: 0.5px 0.5px 1px black;
+        }
+        a:active{
+            color: peachpuff;
+        }
+        a:visited{
+            color: rgb(94, 123, 134);
+        }
+        .especial::after{
+            content: '->';
+        }
+        .especial::before{
+            content: '<-';
+        }
+        #primeiro{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="primeiro">Personalizando links</h1>
+     <ul>
+        <li><a href="https://Youtube.com">Link do Youtube</a></li>
+        <li><a href="https://Instagram.com">Link do Instagram</a></li>
+        <li><a href="https://Facebook.com" target="_blank">Link do Facebook</a></li>
+     </ul>
+     <br>
+     <p class="especial">FIM DO EXEMPLO</p>
+</body>
+</html>

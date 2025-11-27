@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: lightgray;
+            margin: 0px;
+        }
+        h1{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        header{
+            background-color: white;            
+            margin: 10px;
+            padding: 5px;
+        }
+        nav{
+            background-color: grey;
+            padding: 3px;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.363);
+        }
+        nav > a {
+            text-decoration: none;
+            color: black;
+            margin-right: 30px;
+            color: white;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+            color: bisque;
+        }
+        main{
+            background-color: white;
+            margin: 10px;
+            padding: 5px; 
+            border-radius: 0 30px;
+
+        }
+        #noticias{
+            background-color: lightgray;
+            margin: 5px;
+            padding: 3px;
+        }
+        aside{
+            background-color: grey;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+        }
+        footer > p{
+            text-align: center;
+            padding: 5px;
+        }
+        #bola{
+            background-color: rgb(255, 255, 255);
+            height: 50px;
+            width: 50px;
+            margin-left: 20px;
+            border-radius: 60%;
+        }
+
+        #bola > a > img {
+            width: 50px;
+        }
+
+        #bola:hover{
+            background-color: blue;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+
+        <nav>
+            <a href="@">Home</a>
+            <a href="@">Noticias</a>
+            <a href="@">Sobre-nos</a>
+            <a href="@">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="assuntos">
+            <p>Esportes, noticias e tecnologias</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h1>Noticias de Moz</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci ut eos quas corporis officiis fugiat sequi rerum! Pariatur, labore eveniet voluptatum earum repellendus, doloremque reiciendis aliquam ratione nihil natus cupiditate. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur sapiente beatae nam nesciunt est necessitatibus ea eveniet quae in voluptatibus officia repellat dignissimos, iure dolore dicta, iste enim soluta sed!</p>
+                <aside>
+                    <p>Artigo escrito por Jose alberto</p>
+                </aside>
+            </article>
+        </section>
+        <section>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por NovElleven e Orian</p>
+    </footer>
+
+    <div id="bola">
+        <a href="@"><img src="facebook.png" alt=""></a>
+    </div>
+</body>
+</html>
