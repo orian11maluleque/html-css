@@ -4,32 +4,53 @@
     padding: 0px;
     margin: 0px;
 }
-
-
-
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+a:hover{
+    text-decoration: underline;
+}
 
 header{
     background-color: black;
     color: white;
-    h1, p{
-        text-align: center;
-    }
-    padding: 20px;
+    text-align: center;
 }
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+}
+header > p{
+    padding-bottom: 50px;
+}
+
 
 section{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    height: 97vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
 }
-.normal{
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+section.imagem > p{
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+section.normal{
     background-color: white;
+    color: rgb(0, 0, 0);
     
 }
-article{
-    max-width: 400px;
 
-}
 article.img{
     color: white;
     background-color: rgba(0, 0, 0, 0.555);
@@ -38,7 +59,7 @@ article.img{
     background-image: url(/desafios/d012/imagens/background001.jpg);
     background-size: cover;
     background-attachment: fixed;
-}
+} 
 #carta{
     background-image: url(/desafios/d012/imagens/background002.jpg);
     background-size: cover;
@@ -49,4 +70,5 @@ footer{
     background-color: black;
     color: white;
     text-align: center;
+    padding: 10px;
 }
