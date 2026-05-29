@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+
+header{
+    background-color: black;
+    color: white;
+    h1, p{
+        text-align: center;
+    }
+    padding: 20px;
+}
+
+section{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    height: 97vh;
+}
+.normal{
+    background-color: white;
+    
+}
+article{
+    max-width: 400px;
+
+}
+article.img{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.555);
+}
+#joaninha{
+    background-image: url(/desafios/d012/imagens/background001.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+#carta{
+    background-image: url(/desafios/d012/imagens/background002.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
