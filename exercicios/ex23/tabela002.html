@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 400px;
+            
+        }
+        caption{
+            padding: 5px;
+            font-size: 1.2em;
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        thead{
+            background-color: grey;
+            color: white;
+            text-align: center;
+        }
+        tbody > tr:nth-child(even){
+            background-color: lightblue;
+        }
+        tbody > tr:nth-child(odd){
+            background-color: lightpink;
+        }
+        tfoot{
+            background-color: grey;
+            color: white;
+            text-align: center;
+        }
+        td, th{
+            border: 1px solid black;
+            
+        }
+        td.num{
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas grandes</h1>
+    <!--
+    Anatomia de tabelas grandes
+    Table
+        Caption
+        THEAD
+            TR, TD, TH
+        TBODY
+            TR, TD, TH
+        TFOOT
+            TR, TD, TH
+    -->
+
+     <table>
+        <caption>Populacao por provincia</caption>
+        <thead>
+            <tr>
+                <th scope="col">Provincia</th>
+                <th scope="col" style="width: 100px;">Populacao</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Niassa</td>
+                <td class="num">1.933.505</td>
+            </tr>
+            <tr>
+                <td>Cabo Delgado</td>
+                <td class="num">2.455.072</td>
+            </tr>
+            <tr>
+                <td>Nampula</td>
+                <td class="num">6.036.169</td>
+            </tr>
+            <tr>
+                <td>Zambezia</td>
+                <td class="num">5.428.110</td>
+            </tr>
+            <tr>
+                <td>Tete</td>
+                <td class="num">2.813.229</td>
+            </tr>
+            <tr>
+                <td>Manica</td>
+                <td class="num">2.056.037</td>
+            </tr>
+            <tr>
+                <td>Sofala</td>
+                <td class="num">2.388.902</td>
+            </tr>
+            <tr>
+                <td>Inhambane</td>
+                <td class="num">1.516.442</td>
+            </tr>
+            <tr>
+                <td>Gaza</td>
+                <td class="num">1.436.844</td>
+            </tr>
+            <tr>
+                <td>Maputo Provincia</td>
+                <td class="num">2.131.384</td>
+            </tr>
+            <tr>
+                <td>Cidade de Maputo</td>
+                <td class="num">1.122.607</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">TOTAL</th>
+                <td class="num"><strong>29.318.301</strong></td>
+            </tr>
+        </tfoot>
+     </table>
+</body>
+</html>
