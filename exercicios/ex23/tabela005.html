@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+        caption{
+            padding: 3px;
+            text-transform: uppercase;
+            font-weight: bolder;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.692);
+        }
+        th{
+            background-color: grey;
+            color: white;
+        }
+        th,  td{
+            border: 1px solid black;
+            padding: 2px;
+        }
+        .Csexo{
+            background-color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <h1> Personalizando colunas</h1>
+    <table>
+        <colgroup>
+            <col class="Cnome">
+            <col class="Csexo">
+            <col class="Cidade">
+            <col class="Cprof">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th>NOME</th>
+                <th>SEXO</th>
+                <th>IDADE</th>
+                <th>PROFISSAO</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Antonio</td>
+                <td>M</td>
+                <td>23</td>
+                <td>Eng. Civil</td>
+            </tr>
+            <tr>
+                <td>Marcia</td>
+                <td>F</td>
+                <td>22</td>
+                <td>Enfermeira</td>
+            </tr>
+            <tr>
+                <td>Dalton</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Design Grafico</td>
+            </tr>
+            <tr>
+                <td>Vicente</td>
+                <td>M</td>
+                <td>28</td>
+                <td> Sacerdote</td>
+            </tr>
+            <tr>
+                <td>Malaika</td>
+                <td>F</td>
+                <td>19</td>
+                <td>Estudante</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
