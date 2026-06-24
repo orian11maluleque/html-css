@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inome">Nome: </label>
+            <input type="text" name="nome" id="inome" required minlength="4" maxlength="22" placeholder=" Nome Completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="inot">Nota: </label>
+            <input type="number" name="num" id="inum" required max="20" min="0" step="0.5" placeholder="0 a 20" value="10">
+        </p>
+        <p>
+            <label for="ipl">Periodo lectivo</label>
+            <input type="month" name="pl" id="ipl" value="2026-02">
+        </p>
+        
+        <p>
+            <label for="data">Dia da avaliacao</label>
+            <input type="date" name="data" id="idata" value="2026-06-26">
+        </p>
+        <p>
+            <label for="ihora">Hora da avaliacao</label>
+            <input type="time" name="hora" id="ihora">
+        </p>
+        <input type="reset" value="Limar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
