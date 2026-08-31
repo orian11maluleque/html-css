@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+/*Telas maiores*/
+
+@media screen and (min-width: 768px) {
+    i#burger{
+        display: none;
+    }
+
+    menu {
+        display: block;
+    }
+    menu li{
+        display: inline-block;
+    }
+    menu li:hover{
+        border: 2px solid white;
+        border-radius: 2px;
+    }
+}
